@@ -124,5 +124,6 @@ submitBtn.onclick = (e) => {
         submitBtn.style.backgroundColor = "#0F182C";
         document.getElementById("url").target = "_blank";
         e.target.href = `https://api.whatsapp.com/send?phone=2348109915008&text=Hi Peter, my name is ${name}. ${userMessage}. You can also reach out to me via email: ${userEmail}`;
+        window.location.href = `https://api.whatsapp.com/send?phone=2348109915008&text=Hi Peter, my name is ${name}. ${userMessage}. You can also reach out to me via email: ${userEmail}`;
     }
 }
