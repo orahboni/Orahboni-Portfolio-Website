@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./style.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    </head>
+    <body id="body">
+        <div id="body-container">
+        <header>
+            <div class="container-fluid d-none d-md-block" id="desktop-header">
+              <div class="row">
+                <div class="col-9" id="about">
+                    <div class="row">
+                    <h1 class="h4 col-4" id="title">Orahboni</h1>
+                    <button class="btn col-2" id="about-me"><a href="#hello" style="color: hsl(220, 34%, 41%); text-decoration: none;"><span id="header-menu">_hello</span></a></button>
+                    <button class="btn col-2" id="about-me"><a href="#skills"  style="color: hsl(220, 34%, 41%); text-decoration: none;"><span id="header-menu">_about-me</span></a></button>
+                    <button class="btn col-2" id="projects"><a href="#certifications"  style="color: hsl(220, 34%, 41%); text-decoration: none;"><span id="header-menu">_certifications</span></a></button>
+                    </div>
+                </div>
+                <div class="col"></div>
+                <button class="btn col-2" id="contact"><a href="#contact-me"  style="color: hsl(220, 34%, 41%); text-decoration: none;"><span id="header-menu">_contact-me</span></a></button>
+              </div>
+            </div>
+            <div class="container-fluid d-block d-md-none" id="mobile-header">
+                <div class="row">
+                  <div class="col-9" id="about">
+                      <h1 class="h4 col-9" id="title">Orahboni</h1>
+                  </div>
+                  <button class="navbar-toggler btn col-3" id="m-icon" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><a href="#sidebar" aria-controls="sidebar" data-bs-toggle="offcanvas" role="button" class="d-block"><i class="bi bi-list" id="icons"></i></a>
+                  </button>
+                </div>
+              </div>
+        </header>
+        <main id="main">
+            <div class="container" id="hello">
+                <div class="row text-align-center">
+                    <div class="col-lg-12 animate">
+                        <p>Hey, there <span id="handWave">&#x1F44B;&#x1F3Fd;</span></p>
+                    <h2>I'm Peter Nwakuba</h2>
+                    <p><span>> Front end Developer</span></p>
+                    <p>currently focused on building user experiences that drive innovative growth.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container" id="skills">
+                <div class="row my-3 animate">
+                    <h2 class="text-align-center"><span>|</span> Skills</h2>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col-4 text-center animate">
+                        <img src="\assets\js.png" alt="" class="img-fluid my-2" style="max-width: 50%; height: auto;" id="skill">  
+                            <p>JavaScript</p>
+                    </div>
+                    <div class="col-4 text-center animate">
+                        <img src="\assets\React-icon.svg.png" alt="" class="img-fluid my-2" style="max-width: 50%; height: auto;" id="skill">
+                            <p>React</p>
+                </div>
+                <div class="col-4 text-center animate">
+                    <img src="\assets\Bootstrap_logo.svg.png" alt="" class="img-fluid my-2" style="max-width: 50%; height: auto;" id="skill">
+                            <p>BootStrap</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container" id="certifications">
+                <div class="row my-3 animate">
+                    <h2> <span>|</span> Certifications</h2>
+                </div>
+                <div class="row gx-0 animate" id="certRow">
+                    <div class="col-10 col-lg-9">
+                        <div class="row">
+                            <div class="col-3 col-lg-3">
+                                <img src="\assets\free_code_camp_logo.jpg" alt="" class="img-fluid" style="max-width: 100%; height: auto;" id="skill">
+                            </div>
+                            <div class="col-7 col-lg-6">
+                                <h4>JavaScript Algorithms and Data Structures</h4>
+                        <span class="m-0">freeCodeCamp</span>
+                        <p class="m-0" style="color:hsl(215, 19%, 48%)">Issued Apr 2025</p>
+                        <p style="color: hsl(215, 19%, 48%)">Credential ID: peternwakuba-jaads</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn col-2 col-lg-3 rounded-pill" id="certBtn" style="max-width: 50%; height: 30%;"><a href="https://www.freecodecamp.org/certification/PeterNwakuba/javascript-algorithms-and-data-structures-v8" class="me-2" id="icons">
+                        <div id="icons" class="d-none d-md-inline-flex m-0 text-center">Credential</div><i class="bi bi-box-arrow-up-right p-2" id="icons"></i>
+                      </a></button>
+                </div>
+                <div class="row gx-0 my-4 animate" id="certRow">
+                    <div class="col-10 col-lg-9">
+                        <div class="row">
+                            <div class="col-3 col-lg-3">
+                                <img src="\assets\facebook_logo.jpg" alt="" class="img-fluid" style="max-width: 100%; height: auto;" id="skill">
+                            </div>
+                            <div class="col-7 col-lg-6">
+                                <h4>Introduction to Front-End Development</h4>
+                        <span class="m-0">Meta</span>
+                        <p class="m-0" style="color:hsl(215, 19%, 48%)">Issued Apr 2024</p>
+                        <p style="color: hsl(215, 19%, 48%)">Credential ID: U6KJ2STJ7UJ3</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn col-2 col-lg-3 rounded-pill" id="certBtn" style="max-width: 50%; height: 30%;"><a href="https://www.coursera.org/account/accomplishments/verify/U6KJ2STJ7UJ3" class="me-2" id="icons">
+                        <div id="icons" class="d-none d-md-inline-flex m-0 text-center">Credential</div><i class="bi bi-box-arrow-up-right p-2" id="icons"></i>
+                      </a></button>
+                </div>
+            </div>
+            <div class="container" id="contact-me">
+                <div class="row my-3 animate">
+                    <h2> <span>|</span> Contact</h2>
+                </div>
+                <div class="row form-group animate">
+                    <div class="col-6">
+                        <label for="name" class="my-2">Name</label>
+                    <input id="name" class="form-control col-md-6" type="text" placeholder="name" autocomplete="name">
+                    </div>
+                    <div class="col-6 d-md-inline">
+                        <label for="email" class="my-2">Email</label>
+                        <input id="email" class="form-control col-md-6" type="email" placeholder="email" style="color:hsl(216, 100%, 97%);" autocomplete="off">
+                    </div>
+                        <div class="col-12">
+                            <label for="message" class="my-2">Message</label>
+                            <input id="message" class="form-control" type="text" placeholder="write your message..." id="message" style="color:hsl(216, 100%, 97%);" autocomplete="off">
+                        </div>
+                        <div class="col-12">
+                            <button id="submitBtn" class="my-4 p-1 col-12" type="submit" style="border-radius: 5px; color: hsl(216, 100%, 97%); background-color: hsl(31, 100%, 71%); border: none; font-weight: bold;"><a href="" id="url" style="color:hsl(216, 100%, 97%); text-decoration: none;">Send Message <i class="bi bi-send"></i></a></button>
+                        </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+        <div class="container-fluid d-none d-md-block" id="desktop-footer">
+            <div class="row">
+                <div class="col-5" id="about">
+                    <div class="row">
+                    <p class="col-4" id="footer-text">find me in:</p>
+                    <button class="btn col-1" id="footer-icon"><a href="https://twitter.com/orahboni" target="_blank">
+                        <i class="bi bi-twitter-x" id="icons"></i>
+                      </a></button>
+                    <button class="btn col-1" id="footer-icon-2"><a href="https://www.linkedin.com/in/peter-nwakuba/" target="_blank">
+                        <i class="bi bi-linkedin" id="icons"></i>
+                      </a></button>
+                    </div>
+                </div>
+                <div class="col"></div>
+                <button class="btn col-2" id="footer-icon"><a href="https://github.com/orahboni" target="_blank" id="icons">@orahboni <i class="bi bi-github" id="icons"></i>
+                  </a></button>
+            </div>
+        </div>
+        <div class="container-fluid d-block d-md-none" id="mobile-footer">
+            <div class="row">
+                    <p class="col-6" id="m-footer-text">find me in:</p>
+                    <button class="btn col-2" id="m-icon"><a href="https://twitter.com/orahboni" target="_blank">
+                        <i class="bi bi-twitter-x" id="icons"></i>
+                      </a></button>
+                    <button class="btn col-2" id="m-icon"><a href="https://www.linkedin.com/in/peter-nwakuba/" target="_blank">
+                        <i class="bi bi-linkedin" id="icons"></i>
+                      </a></button>
+                <button class="btn col-2" id="m-icon"><a href="https://github.com/orahboni" target="_blank">
+                    <i class="bi bi-github" id="icons"></i>
+                  </a></button>
+            </div>
+        </div>
+        </footer>
+
+        <!--mobile offcanvas start-->
+
+  <div class="offcanvas offcanvas-top" tabindex="-1" id="sidebar" aria-labelledby="sidebar-label" style="background-color: #0F182C;border: 1px solid rgb(53, 71, 107);
+  border-radius: 5px; color: hsl(216, 100%, 97%); margin: 10px; height: 50vh;">
+            <div class="offcanvas-header" style="border-bottom: 1px solid rgb(53, 71, 107); padding: 10px;">
+                <h5 class="offcanvas-title" id="sidebar-label">
+                    Orahboni
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="close" style="color:hsl(216, 100%, 97%); background-color: hsl(31, 100%, 71%); padding: 10px;"></button>
+            </div>
+            <div class="offcanvas-body">
+                <p><a href="#certifications" data-bs-toggle="offcanvas" style="color: hsl(220, 34%, 41%); text-decoration: none;"><span id="header-menu">_certifications</span></a></p>
+                <p><a href="#contact-me" data-bs-toggle="offcanvas" style="color: hsl(220, 34%, 41%); text-decoration: none;"><span id="header-menu">_contact-me</span></a></p>
+            </div>
+            <div class="offcanvas-footer" style="border-top: 1px solid rgb(53, 71, 107); padding: 10px;">
+                <div class="row" style="text-align: center;">
+                    <div class="col-4">
+                        <button class="btn col-4"><a href="https://twitter.com/orahboni" target="_blank">
+                            <i class="bi bi-twitter-x" id="icons"></i>
+                          </a></button>
+                    </div>
+                    <div class="col-4">
+                        <button class="btn col-4"><a href="https://www.linkedin.com/in/peter-nwakuba/" target="_blank">
+                            <i class="bi bi-linkedin" id="icons"></i>
+                          </a></button>
+                    </div>
+                    <div class="col-4">
+                        <button class="btn col-4"><a href="https://github.com/orahboni" target="_blank">
+                            <i class="bi bi-github" id="icons"></i>
+                          </a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--Mobile offcanvas end-->
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+        <script src="./scripts.js"></script>
+    </body>
+</html>  
