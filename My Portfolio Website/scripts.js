@@ -13,7 +13,6 @@ submitBtn.onclick = (e) => {
     let inputMessage = document.getElementById("message");
 
 
-
     if (username == "" || userEmail == "" || !userEmail.includes("@") || userMessage == "") {
         event.preventDefault();
 
@@ -116,14 +115,23 @@ submitBtn.onclick = (e) => {
         
     } else {
 
-        inputName.style.border = "1px solid rgb(53, 71, 107)";
-        inputMessage.style.border = "1px solid rgb(53, 71, 107)";
-        inputEmail.style.border = "1px solid rgb(53, 71, 107)";
+        let message = userMessage;
 
-        submitBtn.style.border = "1px solid white";
-        submitBtn.style.backgroundColor = "#0F182C";
-        document.getElementById("url").target = "_blank";
-        e.target.href = `https://api.whatsapp.com/send?phone=2348109915008&text=Hi Peter, my name is ${name}. ${userMessage}. You can also reach out to me via email: ${userEmail}`;
-        window.location.href = `https://api.whatsapp.com/send?phone=2348109915008&text=Hi Peter, my name is ${name}. ${userMessage}. You can also reach out to me via email: ${userEmail}`;
-    }
+        if (userMessage.endsWith(".")) {
+            message = userMessage.slice(0, -1);
+        } else if (userMessage.endsWith(" ")) {
+            message = userMessage.slice(0, -1);
+        } else if (userMessage.endsWith(".") || userMessage.endsWith(" ")) {
+            message = userMessage;
+        }
+
+            inputName.style.border = "1px solid rgb(53, 71, 107)";
+            inputMessage.style.border = "1px solid rgb(53, 71, 107)";
+            inputEmail.style.border = "1px solid rgb(53, 71, 107)";
+    
+            submitBtn.style.border = "1px solid white";
+            submitBtn.style.backgroundColor = "#0F182C";
+            document.getElementById("url").target = "_blank";
+            e.target.href = `https://api.whatsapp.com/send?phone=2348109915008&text=Hi Peter, my name is ${name}. ${message}. You can also reach out to me via email: ${userEmail}`;
+        }
 }
